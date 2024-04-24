@@ -30,6 +30,8 @@ namespace QlNhanSu_1
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtHSL = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.cboChucVu = new System.Windows.Forms.ComboBox();
             this.cboTenPhong = new System.Windows.Forms.ComboBox();
             this.txtSoDT = new System.Windows.Forms.TextBox();
@@ -56,9 +58,7 @@ namespace QlNhanSu_1
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtHSL = new System.Windows.Forms.TextBox();
-            this.txtTongSV = new System.Windows.Forms.TextBox();
+            this.txtTongNV = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -91,6 +91,22 @@ namespace QlNhanSu_1
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
+            // 
+            // txtHSL
+            // 
+            this.txtHSL.Location = new System.Drawing.Point(621, 35);
+            this.txtHSL.Name = "txtHSL";
+            this.txtHSL.Size = new System.Drawing.Size(269, 35);
+            this.txtHSL.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(473, 43);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(142, 29);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Hệ số lương";
             // 
             // cboChucVu
             // 
@@ -332,37 +348,21 @@ namespace QlNhanSu_1
             this.txtTimKiem.TabIndex = 0;
             this.txtTimKiem.Text = "Nhập tên nhân viên cần tìm";
             // 
-            // label7
+            // txtTongNV
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(473, 43);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(142, 29);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Hế số lương";
-            // 
-            // txtHSL
-            // 
-            this.txtHSL.Location = new System.Drawing.Point(621, 35);
-            this.txtHSL.Name = "txtHSL";
-            this.txtHSL.Size = new System.Drawing.Size(269, 35);
-            this.txtHSL.TabIndex = 14;
-            // 
-            // txtTongSV
-            // 
-            this.txtTongSV.Location = new System.Drawing.Point(414, 630);
-            this.txtTongSV.Name = "txtTongSV";
-            this.txtTongSV.Size = new System.Drawing.Size(133, 35);
-            this.txtTongSV.TabIndex = 4;
+            this.txtTongNV.Location = new System.Drawing.Point(414, 630);
+            this.txtTongNV.Name = "txtTongNV";
+            this.txtTongNV.Size = new System.Drawing.Size(133, 35);
+            this.txtTongNV.TabIndex = 4;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(206, 630);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(202, 29);
+            this.label8.Size = new System.Drawing.Size(210, 29);
             this.label8.TabIndex = 5;
-            this.label8.Text = "Tổng số sinh viên";
+            this.label8.Text = "Tổng số nhân viên";
             // 
             // frmNhanVien
             // 
@@ -370,7 +370,7 @@ namespace QlNhanSu_1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1195, 669);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtTongSV);
+            this.Controls.Add(this.txtTongNV);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -379,7 +379,6 @@ namespace QlNhanSu_1
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "frmNhanVien";
             this.Text = "Quan ly nhân viên";
-          //  this.Load += new System.EventHandler(this.frmNhanVien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -425,7 +424,7 @@ namespace QlNhanSu_1
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.TextBox txtHSL;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtTongSV;
+        private System.Windows.Forms.TextBox txtTongNV;
         private System.Windows.Forms.Label label8;
     }
 }
